@@ -162,16 +162,16 @@ let thankYou = alert('Thank you for your time!');
 
 
 // // PART 9: Truth - y & False -y Checker
-// let arrayChecker = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
-// let truthyFalsey = function(arr) {
-//   for (i = 0; i < arr.length; i++);
-//     if (truthyFalsey === true) {
-//       console.log("Truthy!");
-//     } else {
-//       console.log("Falsy.")
-//     }
-// }
-// truthyFalsey(arrayChecker);
+let arrayChecker = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
+let truthyFalsey = function(arr) {
+  for (i = 0; i < arr.length; i++);
+    if (arr[i] === true) {
+      console.log("Truthy!");
+    } else {
+      console.log("Falsy.")
+    }
+}
+truthyFalsey(arrayChecker);
 
 
 // // BONUS: Double X Counter
