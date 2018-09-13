@@ -150,15 +150,15 @@ switch (new Date().getDay()) {
 
 
 // // PART 8: Let's take the Subway
-// let subwayLines = prompt("Which subway line are you taking today? \nChoose \nl (the L train), \nn (the N train), and \ns (the Six train)");
-// if (subwayLines === 'l') {
-//   alert("\n8th Ave, \n6th Ave, \nUnion Square, \n3rd Ave, \n1st Ave, \nBedford Ave");
-// } else if (subwayLines === 'n') {
-//   alert('\nTimes Square, \n Hearld Square, \n 28th St, \n 23rd St - DAPS Nexus, \n Union Square, \n 8th St');
-// } else if (subwayLines === 's') {
-//   alert("\n Grand Central, \n 33rd St, \n 28th St, \n 23rd St, \n Union Square, \n Astor Place");
-// }
-// let thankYou = alert('Thank you for your time!');
+let subwayLines = prompt("Which subway line are you taking today? \nChoose \nl (the L train), \nn (the N train), and \ns (the Six train)");
+if (subwayLines === 'l') {
+  alert("\n8th Ave, \n6th Ave, \nUnion Square, \n3rd Ave, \n1st Ave, \nBedford Ave");
+} else if (subwayLines === 'n') {
+  alert('\nTimes Square, \n Hearld Square, \n 28th St, \n 23rd St - DAPS Nexus, \n Union Square, \n 8th St');
+} else if (subwayLines === 's') {
+  alert("\n Grand Central, \n 33rd St, \n 28th St, \n 23rd St, \n Union Square, \n Astor Place");
+}
+let thankYou = alert('Thank you for your time!');
 
 
 // // PART 9: Truth - y & False -y Checker
