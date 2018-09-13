@@ -75,77 +75,80 @@ medianOfArray(arr);
 
 /////NEED HELP
 // // PART 4: Sum Array
-// let arraySum = [1, 2, 3]
-// function sumArray (arr) {
-// for (i = 0; i > )
-//  console.log( arr === null? 0 : total)
-// }
-// sumArray(arr);
+let arraySum = [1, 2, 3]
 
+function arraySum (array) {
+ if (array.length === 0) {
+  return 0
+ }
+ let sum =0
+ for (i =0; i < array.length; i++) {
+  sum += array[i]
+ }
+ return sum
+}
+console.log(arraySum)
 
 
 
 // // PART 5: Vowel Count
 let str1 = "this is my string";
-let vowelCount =function () {
-  let vowel = str1.match(/[aeiou]/g);
-  console.log (vowel === null? 0 : vowel.length);
-}
-vowelCount();
+let vowelCount =function (str) {
+  let vowel = 0;
+  for (i=0; i <str.length; i++) {
+    if (str1.match(/[aeiou]/g)) {
+      vowel +=1;
+    }
+  }
+  return vowel;
+};
+console.log(vowelCount)
 
 // // PART 6: Initials
-let fullName = 'Sarah McClellan Currey'
+let getInitials = [];
 function initials(name) {
-let word = name.split(' ')
-let getInitials = ''
-for (i = 0; i < word.length; i++) {
-  if (word[i].length > 0 && word[i] !== '') {
-getInitials += word[i][0]
+  let word = name.split(" ");
+  for (i = 0; i < word.length; i++) {
+    var letter = word[i];
+    for (let j = 0; j < letter.length; j++) {
+      getInitials.push(letter[0]);
+      break;
+    }
   }
+  console.log(getInitials);
+  return getInitials;
 }
-return getInitials;
-}
-console.log(initials(name));
-
-// let firstLetter = name.charAt(0);
-// let secondLetter = name.charAt(5);
-// let thirdLetter = name.charAt(14);
-// let returningInitials = name.split('');
-// let init='';
-// let i;
-// while (i < name.length) {
-//   init+name[i][0];
-// }
-// console.log(init.toUpperCase());
-// //make toUpperCase
+initials("Sarah M Currey")
 
 
 // // PART 7: Days of the week
-// let dayofWeek = function() {
-// let day;
-// switch (new Date().getDay()) {
-//   case 1:
-//    alert("Engergize!");
-//    break;
-//   case 2:
-//     alert("Just getting started!");
-//      break;
-//   case 3:
-//     alert("Hump Hump!");
-//      break;
-//   case 4:
-//     alert("Almost there!");
-//      break;
-//   case 5:
-//   case 6:
-//   case 7:
-//    alert("Weeeeeee!");
-//     break;
-//   default:
-//    alert("Huh, sorry didn\'t get that");
-//     break;
-// }
-// dayofWeek();
+let whichDay = prompt("Is the weekend close?");
+
+dayofWeek = function() {
+let day;
+switch (new Date().getDay()) {
+  case 1:
+   alert("Engergize!");
+   break;
+  case 2:
+    alert("Just getting started!");
+     break;
+  case 3:
+    alert("Hump Hump!");
+     break;
+  case 4:
+    alert("Almost there!");
+     break;
+  case 5:
+  case 6:
+  case 0:
+   alert("Weeeeeee!");
+    break;
+  default:
+   alert("Huh, sorry didn\'t get that");
+    break;
+}
+dayofWeek();
 
 
 // // PART 8: Let's take the Subway
@@ -161,16 +164,16 @@ console.log(initials(name));
 
 
 // // PART 9: Truth - y & False -y Checker
-let arrayChecker = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
-let truthyFalsey = function(arr) {
-  for (i = 0; i < arr.length; i++);
-    if (truthyFalsey === true) {
-      console.log("Truthy!");
-    } else {
-      console.log("Falsy.")
-    }
-}
-truthyFalsey(arrayChecker);
+// let arrayChecker = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
+// let truthyFalsey = function(arr) {
+//   for (i = 0; i < arr.length; i++);
+//     if (truthyFalsey === true) {
+//       console.log("Truthy!");
+//     } else {
+//       console.log("Falsy.")
+//     }
+// }
+// truthyFalsey(arrayChecker);
 
 
 // // BONUS: Double X Counter
@@ -183,4 +186,4 @@ truthyFalsey(arrayChecker);
 
 
 // /* connection checker console log */
-console.log('starter.js is connected! Let\'s get to work! 💪');
+//console.log('starter.js is connected! Let\'s get to work! 💪');
