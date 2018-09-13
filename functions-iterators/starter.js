@@ -63,19 +63,19 @@ oddOrEvenString(str);
 
 // PART 3: Median
 let arr = [1,2,4,6,7,9,3];
-let medianOfArray = function(num) {
-  num.sort(function(a,b) {return a - b;});
-  let divide = Math.floor(num.length/2);
-  if (num.length % 2)
-    console.log (num[divide]);
+let medianOfArray = function(arr) {
+  arr.sort(function(a,b) {return a - b;});
+  let divide = Math.floor(arr.length/2);
+  if (arr.length % 2)
+    console.log (arr[divide]);
   else
-    console.log (num[divide-1] + num[divide])/ 2;
+    console.log (arr[divide-1] + arr[divide])/ 2;
 }
 medianOfArray(arr);
 
 /////NEED HELP
 // // PART 4: Sum Array
-let arraySum = [1, 2, 3]
+let array4 = [1, 2, 3]
 
 function arraySum (array) {
  if (array.length === 0) {
@@ -121,11 +121,9 @@ function initials(name) {
 initials("Sarah M Currey")
 
 
-// // PART 7: Days of the week
-let whichDay = prompt("Is the weekend close?");
+// // // PART 7: Days of the week
+let day = prompt("What day is it?").toLowerCase();
 
-dayofWeek = function() {
-let day;
 switch (new Date().getDay()) {
   case 1:
    alert("Engergize!");
@@ -148,7 +146,7 @@ switch (new Date().getDay()) {
    alert("Huh, sorry didn\'t get that");
     break;
 }
-dayofWeek();
+
 
 
 // // PART 8: Let's take the Subway
