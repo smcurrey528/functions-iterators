@@ -75,12 +75,12 @@ medianOfArray(arr);
 
 /////NEED HELP
 // // PART 4: Sum Array
-let arraySum = [1, 2, 3]
-function sumArray (arr) {
-for (i = 0; i > )
- console.log( arr === null? 0 : total)
-}
-sumArray(arr);
+// let arraySum = [1, 2, 3]
+// function sumArray (arr) {
+// for (i = 0; i > )
+//  console.log( arr === null? 0 : total)
+// }
+// sumArray(arr);
 
 
 
@@ -95,17 +95,28 @@ vowelCount();
 
 // // PART 6: Initials
 let fullName = 'Sarah McClellan Currey'
-let initials = function (name) {
-let firstLetter = str.charAt(0);
-let secondLetter = str.charAt(5);
-let thirdLetter = str.charAt(14);
-
-
-console.log(letter.toUpperCase)
+function initials(name) {
+let word = name.split(' ')
+let getInitials = ''
+for (i = 0; i < word.length; i++) {
+  if (word[i].length > 0 && word[i] !== '') {
+getInitials += word[i][0]
+  }
 }
-initials(name);
+return getInitials;
+}
+console.log(initials(name));
 
-
+// let firstLetter = name.charAt(0);
+// let secondLetter = name.charAt(5);
+// let thirdLetter = name.charAt(14);
+// let returningInitials = name.split('');
+// let init='';
+// let i;
+// while (i < name.length) {
+//   init+name[i][0];
+// }
+// console.log(init.toUpperCase());
 // //make toUpperCase
 
 
