@@ -175,8 +175,15 @@ truthyFalsey(arrayChecker);
 
 // // BONUS: Double X Counter
 // let countXx =function ()
+//Write a **function** called `countXx`. Count the number of "xx" in the given string. We'll say that overlapping is allowed, so "xxx" contains 2 "xx".
+let stringX = 'abcxx, xxx, xxxx'
 
+function countXx (str) {
+ let xMatches = str.match(/[xx]/gi).length;
+  console.log(xMatches);
 
+}
+countXx();
 // // BONUS Two-Dimensional Array
 
 
