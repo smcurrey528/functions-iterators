@@ -62,7 +62,7 @@ oddOrEvenString(str);
 
 
 // PART 3: Median
-let arr = [1,2,4,6,7,9,3];
+let arr = [1,2,3];
 let medianOfArray = function(arr) {
   arr.sort(function(a,b) {return a - b;});
   let divide = Math.floor(arr.length/2);
@@ -76,16 +76,15 @@ medianOfArray(arr);
 /////NEED HELP
 // // PART 4: Sum Array
 let array4 = [1, 2, 3]
-
 function arraySum (array) {
  if (array.length === 0) {
-  return 0
+  console.log(0)
  }
  let sum =0
  for (i =0; i < array.length; i++) {
   sum += array[i]
  }
- return sum
+ console.log(sum)
 }
 console.log(arraySum)
 
