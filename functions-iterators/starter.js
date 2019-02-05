@@ -28,30 +28,27 @@
 // /* ++++====+++==++++==+++++======++++===++++++=====+++==++++++++++===== */
 
 // // PART 0: Just DO it!!
-let name = 'Sarah';
-let justDoIt = function(name) {
-console.log(name +', JUST DO IT!');
+const justDoIt = () => {
+  let name = 'Sarah';
+console.log(`${name}, just do it!`);
 };
 justDoIt(name);
-
 
 // // PART 1: Big or Small String?
 // //Write a **function** called `bigOrSmallString` that accepts one argument, a string, and returns "This word is loooooong!" if the string's length is greater than 10, and "This word is short 😬" otherwise.
 
-let string = "This is my string";
-let bigOrSmallString = function (string) {
+const bigOrSmallString = (string) => {
  if (string.length > 10) {
   console.log("This word is loooooong!")
  } else {
   console.log("This word is short 😬");
  }
-
 }
-bigOrSmallString(string);
+bigOrSmallString('this is my string');
 
 // // PART 2: Odd or Even String Length?
 let str = "Sarah";
-let oddOrEvenString =function() {
+let oddOrEvenString = () => {
   if (oddOrEvenString.length % 2 ) {
     console.log ('This string length is TOTALLY even!');
   } else {
@@ -63,7 +60,7 @@ oddOrEvenString(str);
 
 // PART 3: Median
 let arr = [1,2,3];
-let medianOfArray = function(arr) {
+let medianOfArray = (arr) => {
   arr.sort(function(a,b) {return a - b;});
   let divide = Math.floor(arr.length/2);
   if (arr.length % 2)
@@ -73,51 +70,27 @@ let medianOfArray = function(arr) {
 }
 medianOfArray(arr);
 
-/////NEED HELP
+
 // // PART 4: Sum Array
-let array4 = [1, 2, 3]
-function arraySum (array) {
- if (array.length === 0) {
-  console.log(0)
- }
- let sum =0
- for (i =0; i < array.length; i++) {
-  sum += array[i]
- }
- console.log(sum)
-}
-console.log(arraySum)
+let arr = [1,2,3];
+arr.reduce(function(a,b) {
+   return a + b
+ },0)
 
 
 
 // // PART 5: Vowel Count
-let str1 = "this is my string";
-let vowelCount =function (str) {
-  let vowel = 0;
-  for (i=0; i <str.length; i++) {
-    if (str1.match(/[aeiou]/g)) {
-      vowel +=1;
-    }
-  }
-  return vowel;
-};
-console.log(vowelCount)
+const countVowels = (subject) => {
+    return subject.match(/[aeiou]/gi).length;
+}
+countVowels('Sarah')
 
 // // PART 6: Initials
-let getInitials = [];
-function initials(name) {
-  let word = name.split(" ");
-  for (i = 0; i < word.length; i++) {
-    var letter = word[i];
-    for (let j = 0; j < letter.length; j++) {
-      getInitials.push(letter[0]);
-      break;
-    }
-  }
-  console.log(getInitials);
-  return getInitials;
+const getInitials = (name) => {
+ return name.split(' ').map(i => i[0].toUpperCase()).join('.');
 }
-initials("Sarah M Currey")
+getInitials("Sarah M Currey")
+
 
 
 // // // PART 7: Days of the week
@@ -160,17 +133,6 @@ if (subwayLines === 'l') {
 let thankYou = alert('Thank you for your time!');
 
 
-// // PART 9: Truth - y & False -y Checker
-let arrayChecker = [null, 15, 'unicorn', undefined, 7 && false, null || 'hello, world', false && true, 0 || null];
-let truthyFalsey = function(arr) {
-  for (i = 0; i < arr.length; i++);
-    if (arr[i] === true) {
-      console.log("Truthy!");
-    } else {
-      console.log("Falsy.")
-    }
-}
-truthyFalsey(arrayChecker);
 
 
 // // BONUS: Double X Counter
@@ -184,10 +146,4 @@ function countXx (str) {
 
 }
 countXx();
-// // BONUS Two-Dimensional Array
 
-
-
-
-// /* connection checker console log */
-//console.log('starter.js is connected! Let\'s get to work! 💪');
