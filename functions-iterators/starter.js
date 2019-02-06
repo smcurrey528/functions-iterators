@@ -73,9 +73,7 @@ medianOfArray(arr);
 
 // // PART 4: Sum Array
 let arr = [1,2,3];
-arr.reduce(function(a,b) {
-   return a + b
- },0)
+arr.reduce((a,b) => a + b ,0);
 
 
 
