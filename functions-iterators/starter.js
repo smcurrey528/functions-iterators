@@ -37,7 +37,7 @@ justDoIt(name);
 // // PART 1: Big or Small String?
 // //Write a **function** called `bigOrSmallString` that accepts one argument, a string, and returns "This word is loooooong!" if the string's length is greater than 10, and "This word is short 😬" otherwise.
 
-const bigOrSmallString = (string) => {
+const bigOrSmallString = string => {
  if (string.length > 10) {
   console.log("This word is loooooong!")
  } else {
@@ -60,7 +60,7 @@ oddOrEvenString(str);
 
 // PART 3: Median
 let arr = [1,2,3];
-let medianOfArray = (arr) => {
+let medianOfArray = arr => {
   arr.sort(function(a,b) {return a - b;});
   let divide = Math.floor(arr.length/2);
   if (arr.length % 2)
@@ -80,13 +80,13 @@ arr.reduce(function(a,b) {
 
 
 // // PART 5: Vowel Count
-const countVowels = (subject) => {
+const countVowels = subject => {
     return subject.match(/[aeiou]/gi).length;
 }
 countVowels('Sarah')
 
 // // PART 6: Initials
-const getInitials = (name) => {
+const getInitials = name => {
  return name.split(' ').map(i => i[0].toUpperCase()).join('.');
 }
 getInitials("Sarah M Currey")
